@@ -1,24 +1,41 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
 }
 button {
-    padding: 10px 20px;
+    padding: 5px 20px;
     font-size: 18px;
-    margin: ;
+    margin: 10px;
     cursor: pointer;
+}
+.button:hover {
+    background-color: brown;
+
 }
 
 .dice {
+    margin-top: 10px;
     text-align: center;
     display: inline-block;
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin: 0 10px;
+}
+
+h1 {
+    color: brown;
+}
+p {
+    font-family: Arial, sans-serif ;
+    font-size: 24px;
+    font-weight: bold;
 }
 .result{
     font-size: large;
