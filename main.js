@@ -44,3 +44,14 @@ function rollDice2() {
     }
 }
 
+async function randomDog(playerId) {
+    const response = await fetch("https://api.thedogapi.com/v1/images/search");
+    const randomDog = await response.json();
+    const randomDogUrl = randomDog[0].url;
+
+    const playerDogImg = document.getElementById(playerId);
+    playerDogImg.src = randomDogUrl;    
+}
+randomDog("player1Dog");
+randomDog("player2Dog")
+
